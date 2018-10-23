@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    float:left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+th {
+    background-color:#D3DFED;
+    text-align: left;
+}
+td {
+    padding:0px;
+}
+p {
+    margin: 0px 0px 0px 5px;
+}
+textarea {
+    width: 99%;
+}
+span{
+    font-weight: normal;
+ }
+.num {
+    width: 30px;
+}
+.text{
+    width: 200px;   
+    margin: 0px 5px;
+}
+.names{
+    width:400px;
+}
+.center {
+    text-align: center;
+}

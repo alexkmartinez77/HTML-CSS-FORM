@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAMILY HISTORY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>FAMILY HISTORY</th>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th class="center" colspan='3'>Family Composition</th>
+                    </tr>
+                    <tr>
+                        <th>Parents</th>
+                        <th class="center">
+                            <select id="parent1">
+                                <option selected="selected" value="father">Father</option>
+                                <option value="mother">Mother</option>
+                            </select>
+                        </th>
+                        <th class="center">
+                            <select id="parent2">
+                                <option selected="selected" value="mother">Mother</option>
+                                <option value="father">Father</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td class="center"><input class="text" type="text" id="parent1Name"></td>
+                        <td class="center"><input class="text" type="text" id="parent2Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Occupation</td>
+                        <td class="center"><input class="text" type="text" id="parent1Occ"></td>
+                        <td class="center"><input class="text" type="text" id="parent2Occ"></td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td class="center"><input class="text" type="text" id="parent1Edu"></td>
+                        <td class="center"><input class="text" type="text" id="parent2Edu"></td>
+                    </tr>
+                    <tr>
+                        <td>General Health</td>
+                        <td class="center"><input class="text" type="text" id="parent1Health"></td>
+                        <td class="center"><input class="text" type="text" id="parent2Health"></td>
+                    </tr>
+                    <tr>
+                        <th>Siblings<input type="checkbox" id="siblingsBox"><span>None</span></th>
+                        <th class="center" colspan="2">Names & Ages</th>
+                    </tr>
+                    <tr>
+                        <td># of brothers: <input class="num" type="number" id="brosCount"></td>
+                        <td colspan="2" class="center"><input type="text" class="names" id="brosNameAge"></td>
+                    <tr>
+                        <td># of sisters: <input class="num" type="number" id="sisCount"></td>
+                        <td colspan="2" class="center"><input type="text" class="names" id="sisNameAge"></td>
+                    </tr>
+                    <tr>
+                        <th>Children<input type="checkbox" id="childrenBox"><span>None</span></th>
+                        <th class="center" colspan="2">Names & Ages</th>
+                    </tr>
+                    <tr>
+                        <td># of daughters: <input class="num" type="number" id="daughtersCount"></td>
+                        <td colspan="2" class="center"><input type="text" class="names" id="daughtersNameAge"></td>
+                    </tr>
+                    <tr>
+                        <td># of sons: <input class="num" type="number" id="sonsCount"></td>
+                        <td colspan="2" class="center"><input type="text" class="names" id="sonsNameAge"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Parent's Marital Status</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="singleBox"> Single, never married</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="engagedBox"> Engaged <input type="number" class="num" id="engagedCount"> months</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="MarriedBox"> Married for <input type="number" class="num" id="marriedCount"> years</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="divorcedBox"> Divorced for <input type="number" class="num" id="divorcedCount"> years</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="separatedBox"> Separated for <input type="number" class="num" id="separatedCount"> years</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="divorcingBox"> Divorce in process <input type="number" class="num" id="divorcingCount"> months</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="liveInBox"> Live-in for <input type="number" class="num" id="liveInCount"> years</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selfPriorsBox"><input type="number" class="num" id="selfPriorsCount"> prior marriages (self)</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="partnerPriorsBox"><input type="number" class="num" id="selfPriorsCount"> prior marriages (partner)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="familyCompTA"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Past or present relationship with family members:</b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="familyRelationshipTA"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <b>Stressors:</b>
+                    <input type="checkbox" name="none" id="stressorsCheck">None reported
+                    <input type="checkbox" name="none" id="abuseCheck">Abuse
+                    <input type="checkbox" name="none" id="illnessCheck">Illness
+                    <input type="checkbox" name="none" id="deathCheck">Death
+                    <input type="checkbox" name="none" id="moveCheck">Move
+                    <input type="checkbox" name="none" id="sepDivCheck">Separation or divorce
+                    <input type="checkbox" name="none" id="militaryCheck">Military Deployment
+                    <input type="checkbox" name="none" id="otherCheck">Other
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="stressorsTA"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <b>Family history of Mental Health Issues/Substance Abuse/Other::</b>
+                    <input type="checkbox" name="none" id="healthIssuesBox"> None reported
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="healthIssuesTA"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
